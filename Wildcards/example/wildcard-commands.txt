@@ -1,0 +1,29 @@
+# create some txt files
+touch {a,b,ab}.txt
+
+# ? wildcard
+ls ?.txt
+
+ls ??txt
+
+ls a?txt
+
+# * wildcard
+ls *
+ls a.*
+
+# []
+ls [ab].txt
+touch report{0..9}.txt
+ls report[0-3]*
+
+# [!]
+ls [ab]*.txt
+ls [^a].txt 
+echo report[^0-3].txt
+
+# {}
+touch d{a..d}g
+echo d{a,d}g
+ls d{a..z}g
+
